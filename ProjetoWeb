@@ -1,0 +1,23 @@
+tabelas:
+
+usuário
+
+id, nome, sobrenome, cpf, endereço, nº, cep, cidade, bairro, email, senha.
+
+usuário adm
+
+id, categoria, 
+
+usuário comum
+
+id, Data cadastro, Produto/produto, tipo de negócio.  
+
+produto
+
+cod, usuáriocomum/usuário, nome, Foto/foto, descrição.
+
+foto 
+
+foto 1, foto 2, foto 3.
+
+
