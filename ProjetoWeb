@@ -2,7 +2,7 @@ tabelas:
 
 usuário
 
-id, nome, sobrenome, cpf, endereço, nº, cep, cidade, bairro, email, senha.
+id, nome, sobrenome, Data de Nascimento, cpf, telefone, endereço, nº, cep, cidade, bairro, email, senha.
 
 usuário adm
 
