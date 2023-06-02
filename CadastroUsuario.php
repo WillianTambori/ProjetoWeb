@@ -23,7 +23,7 @@
             font-weight: bold;
         }
         form input{
-            color: white;
+            color: black;
             background-color:white;
             border-color: black;
             font-size: 20px;
@@ -34,7 +34,7 @@
 <body>
     <section class="formulario">
         <section class="formularioCliente">
-            <form method="POST" action="../processamento/processamento.php">
+            <form method="POST" action="processamento/processamento.php">
                 <label>Cadastrar Cliente</label>
                 
                 <input type="text" 
@@ -54,16 +54,18 @@
                 placeholder="Endereco" name="inputEndereco">
 
                 <input type="text" 
-                placeholder="EndNumero" name="inputEndNumero">
+                placeholder="inputEndNumero" name="inputEndNumero">
                 
                 <input type="text" 
                 placeholder="Cep" name="inputCep">
 
                 <input type="text" 
+                placeholder="Bairro" name="inputBairro">   
+                
+                
+                <input type="text" 
                 placeholder="Cidade" name="inputCidade">
 
-                <input type="text" 
-                placeholder="Bairro" name="inputBairro">             
 
                 
                 <input type="text" placeholder="Email" name="inputEmail">
