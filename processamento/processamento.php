@@ -31,7 +31,7 @@ if(!empty($_POST['inputNome']) && !empty($_POST['inputSobrenome']) &&
    }
    if( !empty($_POST['inputNome']) && !empty($_POST['inputMarca']) && 
    !empty($_POST['inputModelo']) && !empty($_POST['inputDataFabr']) && 
-   !empty($_POST['inputDescricao']) && !empty($_POST['inputValor'])){
+   !empty($_POST['inputDescricao']) && !empty($_POST['inputValor']) && !empty($_FILES['imagem'])){
 
       $id = $_POST['inputId'] ;
       $produto = $_POST['inputNome'];
@@ -40,15 +40,21 @@ if(!empty($_POST['inputNome']) && !empty($_POST['inputSobrenome']) &&
       $dataFabr = $_POST['inputDataFabr'];
       $descricao = $_POST['inputDescricao'];
       $valor = $_POST['inputValor']; 
-      $foto = $_POST['inputimagem'];
-      
-
-      inserirProduto($id, $produto, $marca, $modelo, $dataFabr, $descricao, $valor, $foto);
+      $foto = "img/".$id."_".$_FILES['imagem']['name'];
+      $nome_foto = $_FILES['imagem']['name'];
+      move_uploaded_file($_FILES['imagem']['tmp_name'],$foto);
+      if($id > 0)
+         inserirProduto($id, $produto, $marca, $modelo, $dataFabr, $descricao, $valor, $foto);
       header('Location:../Usuario.php');
       
 
       
    }
+   if(!empty($_POST['inputcpfLog']) && !empty($_POST['inputSenhaLog'])){
+      $_SESSION['login'] = $_POST['inputcpfLog'];
+      $_SESSION['Senha'] = $_POST['inputSenhaLog'];
+      header('Location:../Usuario.php');
+  }
 
 
 ?>

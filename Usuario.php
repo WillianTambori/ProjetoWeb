@@ -29,8 +29,12 @@
 
         }
         .produto-lista{
+            
             width:80%;  
             
+        }
+        .produto-lista .produto {
+            background: gray;
         }
         form{
             color:white;
@@ -60,36 +64,20 @@
 
         <?php
         session_start();
-        if(!empty($_POST['inputcpfLog']) && !empty($_POST['inputSenhaLog']) ){
-            $login = $_POST['inputcpfLog'];
-            $Senha = $_POST['inputSenhaLog'];
-            $listaCliente = retornarClientes();
-            $encontrado = false;
+        $encontrado = login();
+        echo ($encontrado > 0) ?"Bem vindo!!":"Não Encontrado!";
+        $listaCliente = retornarClientes();
+        while($cliente = mysqli_fetch_assoc($listaCliente)){
+            if($encontrado == $cliente['id']){
 
-            if(!empty($_POST['inputcpfLog']) && !empty($_POST['inputSenhaLog'])){
-                $_SESSION['login'] = $login;
-                $_SESSION['Senha'] = $Senha;
+                echo "<section class=\"conteudo-bloco\">";
+                echo "<h2>" . $cliente["nome"]."". $cliente["sobrenome"] . "</p>";
+                echo "<p>CPF:" . $cliente["cpf"]." Cadstro nº: ". $cliente["id"]." <p>";
+                echo "<p>E-mail:" . $cliente["email"]."<p>";
+                echo "</section>";
+                
+
             }
-            
-            
-            while($cliente = mysqli_fetch_assoc($listaCliente)){
-                if($_SESSION['login'] == $cliente['cpf'] && $_SESSION['Senha'] == $cliente['senha']){
-
-
-                    echo "<section class=\"conteudo-bloco\">";
-                    echo "<h2> Cliente nº". $cliente["id"]."</h2>"; 
-                    echo "<h2>" . $cliente["nome"]."". $cliente["sobrenome"] . "</p>";
-                    echo "<p>CPF:" . $cliente["cpf"]."<p>";
-                    echo "<p>DataNascimento:" . $cliente["DataNasc"]."<p>";
-                    echo "<p>Telefone:" . $cliente["telefone"]."<p>";
-                    echo "<p>E-mail:" . $cliente["email"]."<p>";
-                    echo "</section>";
-                    $encontrado = true;
-                    $id = $cliente["id"];
-
-                }
-            }
-            echo ($encontrado) ?"Bem vindo!!":"Não Encontrado!";
         }
         ?>
         </section>
@@ -99,7 +87,7 @@
                 <form method="POST" action="processamento/processamento.php" enctype="multipart/form-data" >
                     <label>Cadastrar Produto</label>
 
-                    <input type="hidden" value="<?php echo $id; ?>" name="inputId"> 
+                    <input type="hidden" value="<?php echo login(); ?>" name="inputId"> 
                     
                     <input type="text" 
                     placeholder="Nome" name="inputNome">
@@ -118,22 +106,26 @@
 
 
                      <label>Foto</label>
-                     <input type="file" name="inputimagem" ><br>
+                     <input type="file" name="imagem" ><br>
+
                     
                     
                 
-                
-                    <button>Cadastrar</button>
+
+                    <input name="enviar" type="submit" value="cadastrar">
                 </form>
             </section>
+        </section>
             <section class="produto-lista">
                 <?php
 
                     $listaProduto = retornarProduto();
                     $encontrado = false;
                 while($produto = mysqli_fetch_assoc($listaProduto)){
-                    if($id == $produto["id"]){
-    
+                    if(login() == $produto["id"]){
+
+                    
+                        echo "<img src='".$produto["foto"]."' alt='".$produto["foto"]."'>";
                         echo "<section class=\produto\">";
                         echo "<h2> produto nº". $produto["cod"]."</h2>"; 
                         echo "<h2>" . $produto["nome"]." ". $produto["marca"] . "</h2>";
@@ -145,18 +137,7 @@
     
                 }
                 ?>
-
             </section>
-        </section>
-        <?php
-
-
-
-        
-        ?>
-
-        </section>
-
 
 </body>
 </html>

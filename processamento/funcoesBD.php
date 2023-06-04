@@ -31,6 +31,16 @@ function retornarProduto(){
     $listaProduto = mysqli_query($conexao,$consulta);
     return $listaProduto;
 }
+function login(){
+    $listaCliente = retornarClientes();
+    while($cliente = mysqli_fetch_assoc($listaCliente)){
+        if($_SESSION['login'] == $cliente['cpf'] && $_SESSION['Senha'] == $cliente['senha']){
+            return $cliente["id"];
+        }
+    }
+    return 0;
+
+}
 
 
 ?>

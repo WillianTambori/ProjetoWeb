@@ -9,7 +9,7 @@
 <body>
 <section class="conteudo-login">
         <section class="conteudo-formulario">
-            <form id="form-log" method="POST" action="Usuario.php">
+            <form id="form-log" method="POST" action="processamento/processamento.php">
                 <label id="input-log">Entre</label>
 
                 <input id="input-log" type="text" placeholder="cpf" name="inputcpfLog">
