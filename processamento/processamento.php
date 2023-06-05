@@ -40,7 +40,7 @@ if(!empty($_POST['inputNome']) && !empty($_POST['inputSobrenome']) &&
       $dataFabr = $_POST['inputDataFabr'];
       $descricao = $_POST['inputDescricao'];
       $valor = $_POST['inputValor']; 
-      $foto = "img/".$id."_".$_FILES['imagem']['name'];
+      $foto = "img/Usu".$id."_".$_FILES['imagem']['name'];
       $nome_foto = $_FILES['imagem']['name'];
       move_uploaded_file($_FILES['imagem']['tmp_name'],$foto);
       if($id > 0)

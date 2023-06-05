@@ -115,8 +115,8 @@
                     <input name="enviar" type="submit" value="cadastrar">
                 </form>
             </section>
-        </section>
             <section class="produto-lista">
+                
                 <?php
 
                     $listaProduto = retornarProduto();
@@ -124,8 +124,7 @@
                 while($produto = mysqli_fetch_assoc($listaProduto)){
                     if(login() == $produto["id"]){
 
-                    
-                        echo "<img src='".$produto["foto"]."' alt='".$produto["foto"]."'>";
+                        echo "<img src='processamento/".$produto["foto"]."' height='100px' >";
                         echo "<section class=\produto\">";
                         echo "<h2> produto nº". $produto["cod"]."</h2>"; 
                         echo "<h2>" . $produto["nome"]." ". $produto["marca"] . "</h2>";
@@ -137,6 +136,8 @@
     
                 }
                 ?>
+
+            </section>
             </section>
 
 </body>
