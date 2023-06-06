@@ -20,7 +20,6 @@
             </form>
             <p>Novo na ulx? <a href="cadastroUsuario.php">Cadastrar</a></p>
         </section>
-    </section>
-    
+    </section> 
 </body>
 </html>

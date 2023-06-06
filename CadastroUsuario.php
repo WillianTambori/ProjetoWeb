@@ -34,7 +34,7 @@
 <body>
     <section class="formulario">
         <section class="formularioCliente">
-            <form method="POST" action="processamento/processamento.php">
+            <form method="POST" action="processamento/processamento.php" enctype="multipart/form-data">
                 <label>Cadastrar Cliente</label>
                 
                 <input type="text" 
@@ -72,14 +72,12 @@
                 
                 <input type="password" placeholder="Senha" name="inputSenha">
 
-                <label>Escolha uma opção</label>
-                <select>
-                    <option value="Vendedor">Vendedor</option>
-                    <option value="Comprador">Comprador</option>
+                <label>Foto</label>
+                <input type="file" name="perfil" ><br>
 
-                </select>
+                <input name="enviar" type="submit" value="cadastrar">
                 
-                <input id="botao" type="submit" value="Cadastrar">
+                
             </form>
         </section>
     </section>
