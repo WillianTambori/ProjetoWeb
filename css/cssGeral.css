@@ -5,6 +5,11 @@ body {
     font-size: 0.75em;
 }
 
+h1 {
+    font-size: 20px;
+    font-weight: bold;
+}
+
 
 /* banner */
 
@@ -12,6 +17,7 @@ body {
     width: 100%;
     height: 18.75em;
     background-color: beige;
+    margin-bottom: 2em;
 }
 
 .contentHome {
@@ -27,3 +33,18 @@ body {
     margin: 15px 0;
 }
 
+
+
+
+footer {
+    background-color: aquamarine;
+}
+
+footer .content {
+    max-width: 990px;
+    margin: 0 auto;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    height: 80px;
+}
