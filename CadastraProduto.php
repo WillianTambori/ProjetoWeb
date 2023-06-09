@@ -34,17 +34,14 @@
 <body>
     <section class="formulario">
         <section class="formularioCliente">
-            <form method="POST" action="../processamento/processamento.php">
+            <form method="POST" action="processamento/processamento.php">
                 <label>Cadastrar Produto</label>
                 
-                <input type="text" 
-                placeholder="Nome" name="inputNome">
+                <input type="text" placeholder="Nome" name="inputNome">
                 
-                <input type="text" 
-                placeholder="Marca" name="inputMarca">
+                <input type="text" placeholder="Marca" name="inputMarca">
                 
-                <input type="text" placeholder="Modelo" 
-                name="inputModelo">
+                <input type="text" placeholder="Modelo" name="inputModelo">
                 
                 <input type="date" placeholder="Data de Fabricação" name="inputDataFabr">
                 

@@ -1,7 +1,7 @@
 <?php
 ini_set("display_errors","On");
 function conectarBD(){
-    $conexao = mysqli_connect("localhost","willian","1234","ulx");
+    $conexao = mysqli_connect("localhost","root","","ulx");
     return($conexao);
 }
 function inserirCliente($nome, $sobrenome, $dataNasc, $cpf, $telefone, $endereco, $numero, $cep, $bairro, $cidade, $email, $senha,$foto){
@@ -54,6 +54,9 @@ function excluirProduto($cod){
     mysqli_query($conexao,$consulta);
     
 }
+
+
+
 
 
 ?>

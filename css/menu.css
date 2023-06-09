@@ -1,6 +1,6 @@
 /* Topo Menu */
 header {
-    background-color: aquamarine;
+    background-color: #81b5d8;
 }
 section {
     max-width: 990px;
@@ -13,15 +13,20 @@ nav {
     display: flex;
     justify-content: space-between;
     align-items: center;
+    height: 55px;
 }
 .resumoOpcoes a {
     text-decoration: none;
     padding: 20px 10px;
     color: black;
+    font-weight: bold;
+    font-size: 1.3em;
+    transition: 0.5s;
 }
 .resumoOpcoes a:hover {
-    background-color: #000;
+    background-color: #083451;
     color: aliceblue;
+    transition: 0.5s;
 }
 nav ul li {
     margin: 0;

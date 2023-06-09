@@ -31,7 +31,7 @@ if(!empty($_POST['inputNome']) && !empty($_POST['inputSobrenome']) &&
       header('Location:../Login.php');
       die();
    }
-   if( !empty($_POST['inputNome']) && !empty($_POST['inputMarca']) && 
+   if(!empty($_POST['inputNome']) && !empty($_POST['inputMarca']) && 
    !empty($_POST['inputModelo']) && !empty($_POST['inputDataFabr']) && 
    !empty($_POST['inputDescricao']) && !empty($_POST['inputValor']) && !empty($_FILES['imagem'])){
 
@@ -48,9 +48,6 @@ if(!empty($_POST['inputNome']) && !empty($_POST['inputSobrenome']) &&
          inserirProduto($id, $produto, $marca, $modelo, $dataFabr, $descricao, $valor, $foto);
       }
       header('Location:../Usuario.php');
-      
-
-      
    }
    if(!empty($_POST['inputcpfLog']) && !empty($_POST['inputSenhaLog'])){
       $_SESSION['login'] = $_POST['inputcpfLog'];
