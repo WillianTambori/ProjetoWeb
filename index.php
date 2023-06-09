@@ -17,7 +17,6 @@
             <?php $listaProduto = retornarProduto();
             while($produto = mysqli_fetch_assoc($listaProduto))
             { ?>
-            $id, $produto, $marca, $modelo, $dataFabr, $descricao, $valor, $foto
             <div class="prodMini">
                 <figure> <img src="<?php $foto ?>" width="100%"> </figure>
                 <legend>
