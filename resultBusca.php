@@ -32,7 +32,7 @@
                 <figure> <img src="<?php echo $rows_produto['foto'] ?>" width="100%"> </figure>
                 <legend>
                     <h2><?php echo $rows_produto['nome'] ?></h2>
-                    <p>Marca: <?php echo $rows_produto['marca'] ?> / Modelo: <?php echo $rows_produto['modelo'] ?>
+                    <p>Marca: <?php echo $rows_produto['marca'] ?><br>Modelo: <?php echo $rows_produto['modelo'] ?>
                     <br>R$: <?php echo $rows_produto['valor'] ?></p>
                 </legend>
             </div>
