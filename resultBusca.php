@@ -29,11 +29,11 @@
                     echo "Busca pelo produto: " .$rows_produto['nome'];
             ?>
             <div class="prodMini">
-                <figure> <img src="<?php $foto ?>" width="100%"> </figure>
+                <figure> <img src="<?php echo $rows_produto['foto'] ?>" width="100%"> </figure>
                 <legend>
-                    <h2><?php $nome ?></h2>
-                    <p>Marca: <?php $marca ?> / Modelo: <?php $modelo ?>
-                    <br>R$: <?php $valor ?></p>
+                    <h2><?php echo $rows_produto['nome'] ?></h2>
+                    <p>Marca: <?php echo $rows_produto['marca'] ?> / Modelo: <?php echo $rows_produto['modelo'] ?>
+                    <br>R$: <?php echo $rows_produto['valor'] ?></p>
                 </legend>
             </div>
             <?php } ?>

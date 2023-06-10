@@ -14,18 +14,19 @@
     <section>
         <h1>Produtos em destaque</h1>
         <article class="contentHome">
-            <?php $listaProduto = retornarProduto();
-            while($produto = mysqli_fetch_assoc($listaProduto))
-            { ?>
-            <div class="prodMini">
-                <figure> <img src="<?php $foto ?>" width="100%"> </figure>
-                <legend>
-                    <h2><?php $produto ?></h2>
-                    <p>Marca: <?php $modelo ?> / Modelo: <?php $modelo ?>
-                    <br>R$: <?php $valor ?></p>
-                </legend>
-            </div>
-            <?php } ?>
+            <?php
+                $listaProduto = retornarProduto();
+                while($produto = mysqli_fetch_assoc($listaProduto))
+                { ?>
+                    <div class="prodMini">
+                        <figure> <img src="<?php echo $produto["foto"]; ?>" width="100%"> </figure>
+                        <legend>
+                            <h2><?php echo $produto['nome'] ?></h2>
+                            <p>Marca: <?php echo $modelo["modelo"] ?> / Modelo: <?php echo $produto['descricao'] ?>
+                            <br>R$: <?php echo  $valor['valor'] ?></p>
+                        </legend>
+                    </div>
+                <?php } ?>
             <!-- <div class="prodMini"></div>
             <div class="prodMini"></div>
             <div class="prodMini"></div>

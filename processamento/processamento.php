@@ -22,13 +22,13 @@ if(!empty($_POST['inputNome']) && !empty($_POST['inputSobrenome']) &&
       $cidade = $_POST['inputCidade'];
       $email = $_POST['inputEmail'];
       $senha = $_POST['inputSenha'];
-      $foto = "img/Perfil_".$cpf."_".$_FILES['perfil']['name'];
+      $foto = "img/perfil_".$cpf."_".$_FILES['perfil']['name'];
       move_uploaded_file($_FILES['perfil']['tmp_name'],$foto);
 
       echo "nome";
 
       inserirCliente($nome, $sobrenome, $dataNasc, $cpf, $telefone, $endereco, $numero, $cep, $bairro, $cidade, $email, $senha,$foto);
-      header('Location:../Login.php');
+      header('Location:../login.php');
       die();
    }
    if(!empty($_POST['inputNome']) && !empty($_POST['inputMarca']) && 
@@ -42,17 +42,17 @@ if(!empty($_POST['inputNome']) && !empty($_POST['inputSobrenome']) &&
       $dataFabr = $_POST['inputDataFabr'];
       $descricao = $_POST['inputDescricao'];
       $valor = $_POST['inputValor']; 
-      $foto = "img/Usu".$id."_".$_FILES['imagem']['name'];
+      $foto = "img/usu".$id."_".$_FILES['imagem']['name'];
       move_uploaded_file($_FILES['imagem']['tmp_name'],$foto);
       if($id > 0){   
          inserirProduto($id, $produto, $marca, $modelo, $dataFabr, $descricao, $valor, $foto);
       }
-      header('Location:../Usuario.php');
+      header('Location:../usuario.php');
    }
    if(!empty($_POST['inputcpfLog']) && !empty($_POST['inputSenhaLog'])){
       $_SESSION['login'] = $_POST['inputcpfLog'];
       $_SESSION['Senha'] = $_POST['inputSenhaLog'];
-      header('Location:../Usuario.php');
+      header('Location:../usuario.php');
   }
   
   if(!empty($_POST['editar'])){
@@ -72,10 +72,10 @@ if(!empty($_POST['inputNome']) && !empty($_POST['inputSobrenome']) &&
                $dataFabr =(!empty($_POST['DataFabr'])) ? $_POST['DataFabr']: $produto['dataFabr'] ;
                $descricao =(!empty($_POST['Descricao'])) ? $_POST['Descricao']: $produto['descricao'] ;
                $valor =(!empty($_POST['Valor'])) ? $_POST['Valor']: $produto['valor'] ;
-               $foto =(!empty($_FILES['imagem'])) ? "img/Usu".$id."_".$_FILES['imagem']['name']: $produto['foto'] ;
+               $foto =(!empty($_FILES['imagem'])) ? "img/usu".$id."_".$_FILES['imagem']['name']: $produto['foto'] ;
                move_uploaded_file($_FILES['imagem']['tmp_name'],$foto);
                editarProduto($cod, $nome, $marca, $modelo, $dataFabr, $descricao, $valor, $foto);
-               header('Location:../Usuario.php');
+               header('Location:../usuario.php');
 
             
                
@@ -86,7 +86,7 @@ if(!empty($_POST['inputNome']) && !empty($_POST['inputSobrenome']) &&
          
          $_SESSION['codigo'] = $_POST['produto'];
          echo $_SESSION['codigo'];
-         header('Location:../Usuario.php');  
+         header('Location:../usuario.php');  
       }
       
       
@@ -94,7 +94,7 @@ if(!empty($_POST['inputNome']) && !empty($_POST['inputSobrenome']) &&
    }
    if(!empty($_POST['excluir'])){
       excluirProduto($_POST['produto']);
-      header('Location:../Usuario.php'); 
+      header('Location:../usuario.php'); 
 
    }
    
