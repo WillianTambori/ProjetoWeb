@@ -7,9 +7,9 @@
             </div>
             <div class="resumoOpcoes">
                 <ul>
-                    <li><a href="#">Novo Usuário</a></li>
-                    <li><a href="#">Cadastrar Produto</a></li>
-                    <li><a href="#">Contato</a></li>
+                    <li><a href="cadastroUsuario.php">Novo Usuário</a></li>
+                    <li><a href="usuario.php">Cadastrar / Editar Produto</a></li>
+                    <li><a href="contato.php">Contato</a></li>
                 </ul>
             </div>
             

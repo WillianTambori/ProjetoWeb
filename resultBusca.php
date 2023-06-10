@@ -26,7 +26,6 @@
         <article class="contentHome">
             <?php
                 while($rows_produto = mysqli_fetch_assoc($resultBusca)){
-                    echo "Busca pelo produto: " .$rows_produto['nome'];
             ?>
             <div class="prodMini">
                 <figure> <img src="<?php echo $rows_produto['foto'] ?>" width="100%"> </figure>

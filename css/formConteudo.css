@@ -1,0 +1,45 @@
+.conteudo-form form {
+    padding: 20px;
+    border: solid 1px #000;
+    width: 80%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    align-items: flex-start;
+    margin: 0 auto;
+}
+
+.conteudo-form input, textarea {
+    width: 95%;
+    padding: 15px;
+    margin: 0 0 30px 0;
+}
+
+
+
+.conteudo-form label {
+    font-weight: bold;
+    font-size: 13px;
+    margin-bottom: 10px;
+}
+
+.conteudo-form .butom {
+    display: block;
+    padding: 20px;
+    border-radius: 10px;
+    border: none;
+    background-color: rgb(178,34,34);
+    color: white;
+    width: 50%;
+    margin: 0 auto;
+}
+
+.conteudo-form .butom:hover {
+    background-color: rgb(238, 35, 35);
+    cursor: pointer;
+}
+
+.conteudo-form .texto {
+    width: 90%;
+}
