@@ -7,7 +7,7 @@
     $conexao = conectarBD();
     $cod = $_GET['cod'];
     $consulta = "select * FROM produto  where cod = $cod";
-    //$consulta = "select * FROM produto inner join usuario on id = id where cod = $cod";
+    //$consulta = "select * FROM produto inner join usuario on $id = $id where cod = $cod";
     $resultBusca = mysqli_query($conexao, $consulta);
 ?>
 
@@ -30,7 +30,7 @@
     <article class="contentHome">
         <div class="container">
             <div class="prod1">
-                <figure> <img src="img/usersContent/<?php echo $rows_produto['foto'] ?>" width="100%"> </figure>
+                <figure> <img src="<?php include "incCaminho.php" ?><?php echo $rows_produto['foto'] ?>" width="100%"> </figure>
             </div>
             <div class="prod">
                     <h2>Marca: <?php echo $rows_produto['marca'] ?></h2>

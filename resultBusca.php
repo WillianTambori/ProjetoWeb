@@ -29,7 +29,7 @@
             ?>
             <div class="prodMini">
                 <a href="produtoDetalhe.php?cod=<?php echo $rows_produto['cod'] ?>">    
-                    <figure> <img src="img/usersContent/<?php echo $rows_produto['foto'] ?>" width="100%"> </figure>
+                    <figure> <img src="<?php include "incCaminho.php" ?><?php echo $rows_produto['foto'] ?>" width="100%"> </figure>
                 </a>
                 <legend>
                     <h2><?php echo $rows_produto['nome'] ?></h2>
