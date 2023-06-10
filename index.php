@@ -27,7 +27,7 @@
             <?php
                 $listaProduto = retornarProduto();
                 while($produto = mysqli_fetch_assoc($listaProduto))
-                { ?>
+                {?>
                     <div class="prodMini">
                         <a href="produtoDetalhe.php?cod=<?php echo $produto['cod'] ?>"><figure> <img src="<?php include "incCaminho.php" ?><?php echo $produto["foto"]; ?>" width="100%"> </figure></a>
                         <legend>
