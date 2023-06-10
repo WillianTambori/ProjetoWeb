@@ -22,7 +22,7 @@ if(!empty($_POST['inputNome']) && !empty($_POST['inputSobrenome']) &&
       $cidade = $_POST['inputCidade'];
       $email = $_POST['inputEmail'];
       $senha = $_POST['inputSenha'];
-      $foto = "img/perfil_".$cpf."_".$_FILES['perfil']['name'];
+      $foto = "perfil_".$cpf."_".$_FILES['perfil']['name'];
       move_uploaded_file($_FILES['perfil']['tmp_name'],$foto);
 
       echo "nome";
@@ -42,7 +42,7 @@ if(!empty($_POST['inputNome']) && !empty($_POST['inputSobrenome']) &&
       $dataFabr = $_POST['inputDataFabr'];
       $descricao = $_POST['inputDescricao'];
       $valor = $_POST['inputValor']; 
-      $foto = "img/usu".$id."_".$_FILES['imagem']['name'];
+      $foto = "usu".$id."_".$_FILES['imagem']['name'];
       move_uploaded_file($_FILES['imagem']['tmp_name'],$foto);
       if($id > 0){   
          inserirProduto($id, $produto, $marca, $modelo, $dataFabr, $descricao, $valor, $foto);
@@ -72,7 +72,7 @@ if(!empty($_POST['inputNome']) && !empty($_POST['inputSobrenome']) &&
                $dataFabr =(!empty($_POST['DataFabr'])) ? $_POST['DataFabr']: $produto['dataFabr'] ;
                $descricao =(!empty($_POST['Descricao'])) ? $_POST['Descricao']: $produto['descricao'] ;
                $valor =(!empty($_POST['Valor'])) ? $_POST['Valor']: $produto['valor'] ;
-               $foto =(!empty($_FILES['imagem'])) ? "img/usu".$id."_".$_FILES['imagem']['name']: $produto['foto'] ;
+               $foto =(!empty($_FILES['imagem'])) ? "usu".$id."_".$_FILES['imagem']['name']: $produto['foto'] ;
                move_uploaded_file($_FILES['imagem']['tmp_name'],$foto);
                editarProduto($cod, $nome, $marca, $modelo, $dataFabr, $descricao, $valor, $foto);
                header('Location:../usuario.php');

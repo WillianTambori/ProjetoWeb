@@ -85,7 +85,7 @@
             if($encontrado == $cliente['id']){
 
                 echo "<section class=\"conteudo-bloco\">";
-                echo "<img src='processamento/".$cliente["foto"]."' height='100px' >";
+                echo "<img src='img/usersContent/".$cliente["foto"]."' height='100px' >";
                 echo "<h2>" . $cliente["nome"]." ". $cliente["sobrenome"] . "</p>";
                 echo "<p>CPF:" . $cliente["cpf"]." Cadstro nº: ". $cliente["id"]." <p>";
                 echo "<p>E-mail:" . $cliente["email"]."<p>";
@@ -139,7 +139,7 @@
                 while($produto = mysqli_fetch_assoc($listaProduto)){
                     if(login() == $produto["id"]){
                         echo"<div>";
-                        echo "<img src='processamento/".$produto["foto"]."' height='100px' >";
+                        echo "<img src='img/usersContent/".$produto["foto"]."' height='100px' >";
                         echo"<table>";
                         echo"<tr>";
                         echo"<th>Produto:</th>";

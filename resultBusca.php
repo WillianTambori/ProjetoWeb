@@ -28,7 +28,9 @@
                 while($rows_produto = mysqli_fetch_assoc($resultBusca)){
             ?>
             <div class="prodMini">
-                <figure> <img src="<?php echo $rows_produto['foto'] ?>" width="100%"> </figure>
+                <a href="produtoDetalhe.php?cod=<?php echo $rows_produto['cod'] ?>">    
+                    <figure> <img src="img/usersContent/<?php echo $rows_produto['foto'] ?>" width="100%"> </figure>
+                </a>
                 <legend>
                     <h2><?php echo $rows_produto['nome'] ?></h2>
                     <p>Marca: <?php echo $rows_produto['marca'] ?><br>Modelo: <?php echo $rows_produto['modelo'] ?>
