@@ -18,6 +18,7 @@ function retornarClientes(){
     $listaClientes = mysqli_query($conexao,$consulta);
     return $listaClientes;
 }
+
 function inserirProduto($id, $produto, $marca, $modelo, $dataFabr, $descricao, $valor, $foto){
     $conexao = conectarBD();
     $consulta = "INSERT INTO produto (id, nome, marca, modelo, dataFabr, descricao, valor, foto)
@@ -25,6 +26,13 @@ function inserirProduto($id, $produto, $marca, $modelo, $dataFabr, $descricao, $
     mysqli_query($conexao,$consulta);
 }
 function retornarProduto(){
+
+    $conexao = conectarBD();
+    $consulta = "SELECT * FROM produto";
+    $listaProduto = mysqli_query($conexao,$consulta);
+    return $listaProduto;
+}
+function paginacao_Produto(){
 
     $conexao = conectarBD();
     $consulta = "SELECT * FROM produto";
