@@ -39,10 +39,10 @@
                     </div>
                 <?php $control += 1;} }
                 ?>
-            <!-- <div class="prodMini"></div>
+             <!-- <div class="prodMini"></div>
             <div class="prodMini"></div>
             <div class="prodMini"></div>
-            <div class="prodMini"></div> -->
+            <div class="prodMini"></div>  -->  
 
         </article>
     </section>
