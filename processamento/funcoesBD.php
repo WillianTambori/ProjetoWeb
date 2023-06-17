@@ -4,6 +4,8 @@ function conectarBD(){
     $conexao = mysqli_connect("localhost","root","","ulx");
     return($conexao);
 }
+
+
 function inserirCliente($nome, $sobrenome, $dataNasc, $cpf, $telefone, $endereco, $numero, $cep, $bairro, $cidade, $email, $senha,$foto){
     
     $conexao = conectarBD();
@@ -21,6 +23,7 @@ function retornarClientes(){
 
 function inserirProduto($id, $produto, $marca, $modelo, $dataFabr, $descricao, $valor, $foto){
     $conexao = conectarBD();
+    
     $consulta = "INSERT INTO produto (id, nome, marca, modelo, dataFabr, descricao, valor, foto)
     VALUES ('$id', '$produto', '$marca', '$modelo', '$dataFabr', '$descricao', '$valor', '$foto')";
     mysqli_query($conexao,$consulta);

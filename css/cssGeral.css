@@ -28,12 +28,21 @@ h1 {
     grid-template-columns: 1fr 1fr 1fr 1fr;
 }
 
+.contentPag {
+    justify-content:space-around;
+    flex-direction: row;
+    display: flex;
+    
+
+}
+
 .prodMini {
     width: 170px;
     height: 230px;
     border: solid 1px #000;
     margin: 15px 0;
     line-height: 2.5dvh;
+    padding: 5px;
 }
 .prodMini figure {
     padding: 0 0 15px 0;
@@ -42,7 +51,54 @@ h1 {
     align-items: center;
 }
 
+.botListar{
+    width: 11.5em;
+    padding: 16px;
+    border-radius: 10px;
+    background-color: rgb(16, 6, 107);
+    color: aliceblue;
+    margin-left: 15px;
+    border: none;
+}
 
+.botListar:hover{
+    background-color: rgb(40, 144, 230);
+    color: black;
+    cursor: pointer;
+}
+
+
+.botEditar{
+    padding: 16px;
+    border-radius: 10px;
+    background-color: rgb(28, 78, 5);
+    color: aliceblue;
+    margin: 5px 15px;
+    border: none;
+}
+
+.botEditar:hover{
+    background-color: rgb(10, 221, 56);
+    color: black;
+    cursor: pointer;
+}
+
+
+
+.botExcluir{
+    padding: 16px;
+    border-radius: 10px;
+    background-color: rgb(82, 4, 4);
+    color: aliceblue;
+    margin: 15px 15px;
+    border: none;
+}
+
+.botExcluir:hover{
+    background-color: rgb(221, 10, 10);
+    color: black;
+    cursor: pointer;
+}
 
 
 footer {
@@ -90,4 +146,44 @@ footer .content {
     flex-direction: row;
     width: 40%;
 	margin-top: 1em;
+}
+
+.prodLista p {
+    font-size: 1.5em;
+    line-height: 150%;
+}
+
+.destaque {
+    font-weight: bold;
+}
+
+.entreLinhas {
+    line-height: 150%;
+}
+
+.aviso {
+    color: red;
+    text-align: center;
+}
+
+.aviso2 {
+    color: rgb(6, 146, 6);
+    text-align: center;
+}
+
+.footerLista ul{
+    list-style: none;
+    margin: 0;
+    padding: 0;
+    line-height: 150%;
+
+}
+
+.footerLista a {
+    color: #2c1db6;
+}
+
+.footerLista a:hover {
+    color: #000;
+    line-height: 130%;
 }

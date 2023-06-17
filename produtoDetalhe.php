@@ -16,7 +16,7 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>TECPeg / TECPag</title>
+    <title>TecPegue / TecPague</title>
     <?php include "incHead.php" ?>
 </head>
 <body>
@@ -27,7 +27,7 @@
 ?>
 <section> <h1>Produto: <?php echo $rows_produto['nome'] ?></h1></section>
     <section>
-    <article class="contentHome">
+    <article class="contentPag">
         <div class="container">
             <div class="prod1">
                 <figure> <img src="<?php include "incCaminho.php" ?><?php echo $rows_produto['foto'] ?>" width="100%"> </figure>

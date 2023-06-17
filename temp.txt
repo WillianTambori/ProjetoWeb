@@ -1,0 +1,52 @@
+<style>
+        *{
+            margin: 0;
+            background-color:gray;
+        }
+        form{
+            color:white;
+            width: 600px;
+            margin: auto;
+            display: flex;
+            flex-direction: column;            
+        }
+        form label{
+            color: black;
+            font-size: 20px;
+            font-weight: bold;
+        }
+        form input{
+            color: black;
+            background-color:white;
+            border-color: black;
+            font-size: 20px;
+            height: 30px;
+        }
+    </style>
+
+
+
+
+
+
+        form{
+            color:white;
+            width: 600px;
+            margin: auto;
+            display: flex;
+            flex-direction: column;
+            
+                        
+        }
+        form label{
+            color: black;
+            font-size: 20px;
+            font-weight: bold;
+        }
+        form input{
+            color: black;
+            background-color:white;
+            border-color: black;
+            font-size: 20px;
+            height: 30px;
+        }

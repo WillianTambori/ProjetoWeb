@@ -5,7 +5,7 @@
         return($conexao);
     }
     $conexao = conectarBD();
-    $pesquisar = $_POST['pesquisar'];
+    $pesquisar = $_GET['cat'];
     $consulta = "select * FROM produto where nome LIKE '%$pesquisar%' LIMIT 20";
     $resultBusca = mysqli_query($conexao, $consulta);
 ?>

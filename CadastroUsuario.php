@@ -4,82 +4,48 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
-    <style>
-        *{
-            margin: 0;
-            background-color:gray;
-        }
-        form{
-            color:white;
-            width: 600px;
-            margin: auto;
-            display: flex;
-            flex-direction: column;            
-        }
-        form label{
-            color: black;
-            font-size: 20px;
-            font-weight: bold;
-        }
-        form input{
-            color: black;
-            background-color:white;
-            border-color: black;
-            font-size: 20px;
-            height: 30px;
-        }
-    </style>
+    <title>TecPegue / TecPague - Cadastro usuário</title>
+    <?php include "incHead.php" ?>
+    
 </head>
 <body>
-    <section class="formulario">
+<?php include "incMenuSup.php" ?>
+    <section class="formulario conteudo-form">
         <section class="formularioCliente">
+            
             <form method="POST" action="processamento/processamento.php" enctype="multipart/form-data">
-                <label>Cadastrar Cliente</label>
+            <h1>CADASTRO DE CLIENTE</h1>    
                 
-                <input type="text" 
-                placeholder="Nome" name="inputNome">
+                <label for="inputNome">Nome: </label><input type="text" id="inputNome" placeholder="Nome" name="inputNome">
                 
-                <input type="text" 
-                placeholder="Sobrenome" name="inputSobrenome">
+                <label for="inputSobrenome">Sobrenome: </label><input type="text" id="inputSobrenome" placeholder="Sobrenome" name="inputSobrenome">
                 
-                <input type="text" placeholder="CPF" 
-                name="inputCPF">
+                <label for="inputCPF">Sobrenome: </label><input type="text" id="inputCPF" placeholder="CPF" name="inputCPF">
                 
-                <input type="date" placeholder="Data Nascimento" name="inputDataNasc">
+                <label for="inputDataNasc">Data Nascimento: </label><input type="date" id="" placeholder="Data Nascimento" name="inputDataNasc">
                 
-                <input type="text" placeholder="Telefone" name="inputTelefone">
+                <label for="inputTelefone">Telefone: </label><input type="text" id="inputTelefone" placeholder="Telefone" name="inputTelefone">
 
-                <input type="text" 
-                placeholder="Endereco" name="inputEndereco">
+                <label for="inputEndereco">Endereco: </label><input type="text" id="inputEndereco" placeholder="Endereco" name="inputEndereco">
 
-                <input type="text" 
-                placeholder="inputEndNumero" name="inputEndNumero">
+                <label for="inputEndNumero">Numero: </label><input type="text" id="inputEndNumero" placeholder="Numero" name="inputEndNumero">
                 
-                <input type="text" 
-                placeholder="Cep" name="inputCep">
+                <label for="inputCep">Cep: </label><input type="text" id="inputCep" placeholder="Cep" name="inputCep">
 
-                <input type="text" 
-                placeholder="Bairro" name="inputBairro">   
-                
-                
-                <input type="text" 
-                placeholder="Cidade" name="inputCidade">
-
-
-                
-                <input type="text" placeholder="Email" name="inputEmail">
-                
-                <input type="password" placeholder="Senha" name="inputSenha">
+                <label for="inputBairro">Bairro: </label><input type="text" id="inputBairro" placeholder="Bairro" name="inputBairro">   
+                <label for="inputCidade">Cidade: </label><input type="text" id="inputCidade" placeholder="Cidade" name="inputCidade">
+                <label for="inputEmail">E-mail: </label><input type="text" id="inputEmail" placeholder="Email" name="inputEmail">    
+                <label for="inputSenha">Senha: </label><input type="password" id="inputSenha" placeholder="Senha" name="inputSenha">
 
                 <label>Foto</label>
                 <input type="file" name="perfil" ><br>
 
-                <input name="enviar" type="submit" value="cadastrar">
+                <input name="enviar" type="submit" value="cadastrar" class="butom">
                 
                 
             </form>
         </section>
     </section>
+    <?php include "incFooter.php" ?>
 </body>
 </html>

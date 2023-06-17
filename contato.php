@@ -1,10 +1,11 @@
-<?php require "processamento/funcoesBD.php" ?>
+<?php require "processamento/funcoesBD.php";
+session_start();  ?>
 <!DOCTYPE html>
 <html lang="en">
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>TECPeg / TECPag</title>
+    <title>TecPegue / TecPague</title>
     <?php include "incHead.php" ?>
 </head>
 <body>
@@ -12,8 +13,15 @@
 
 
 <section class="conteudo-form">
-
-            <form  method="POST" action="processamento/processaContato.php">
+    <h1>
+        <?php
+        if(isset($_SESSION['msg'])){
+                    echo $_SESSION['msg'];
+                }
+                session_destroy();
+            ?>
+    </h1>
+            <form  method="POST" action="processamento/enviaFormEmail.php">
             <h1>CONTATO</h1>
                 <label for="nome" class="form-label">Nome:</label>
                 <input type="text" id="nome">
@@ -32,7 +40,7 @@
                 <textarea id="msg" name="msg" rows="4" ></textarea>
 
                 <br>
-                <input type="button" value="Enviar" class="butom">
+                <input type="submit" value="Enviar" class="butom">
 
             </form>
         </section>

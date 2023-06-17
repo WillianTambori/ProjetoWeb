@@ -5,8 +5,7 @@
         return($conexao);
     }
     $conexao = conectarBD();
-    $pesquisar = $_POST['pesquisar'];
-    $consulta = "select * FROM produto where nome LIKE '%$pesquisar%' LIMIT 20";
+    $consulta = "select * FROM produto";
     $resultBusca = mysqli_query($conexao, $consulta);
 ?>
 
@@ -21,7 +20,7 @@
 <body>
 <?php include "incMenuSup.php" ?>
 
-<section> <h1>Resultado busca produto: <?php echo $pesquisar; ?></h1></section>
+<section> <h1>Confira nossa lista completa de equipamentos e acessórios</h1></section>
     <section>
         <article class="contentHome">
             <?php
