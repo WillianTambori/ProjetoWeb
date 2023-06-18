@@ -38,17 +38,23 @@ h1 {
 
 .prodMini {
     width: 170px;
-    height: 230px;
+    height: 250px;
     border: solid 1px #000;
     margin: 15px 0;
     line-height: 2.5dvh;
     padding: 5px;
+	overflow: hidden;
 }
 .prodMini figure {
     padding: 0 0 15px 0;
     height: 150px;
     display: flex;
     align-items: center;
+}
+
+.prodMini:hover {
+	border: solid #147CA8;
+	padding: 5px;
 }
 
 .botListar{

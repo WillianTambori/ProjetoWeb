@@ -36,7 +36,7 @@
                     <h2>Marca: <?php echo $rows_produto['marca'] ?></h2>
                     <h3>Modelo: <?php echo $rows_produto['modelo'] ?></h3>
                     <h3>R$: <?php echo $rows_produto['valor'] ?></h3>
-                    <h3>Usuário: </h3>
+
             </div>
         </div>
 

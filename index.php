@@ -16,10 +16,9 @@
         <h1>Produtos em destaque</h1>
         <article class="contentHome">
             <?php
-            $control = 0;
                 $listaProduto = retornarProduto();
                 while($produto = mysqli_fetch_assoc($listaProduto))
-                { if($control < 1){?>
+                {?>
                     <div class="prodMini">
                         <a href="produtoDetalhe.php?cod=<?php echo $produto['cod'] ?>"><figure> <img src="<?php include "incCaminho.php" ?><?php echo $produto["foto"]; ?>" width="100%"> </figure></a>
                         <legend>
@@ -28,7 +27,7 @@
                             <br>R$: <?php echo  $produto['valor'] ?></p>
                         </legend>
                     </div>
-                <?php $control += 1;} }
+                <?php  }
                 ?>
              <!-- <div class="prodMini"></div>
             <div class="prodMini"></div>
