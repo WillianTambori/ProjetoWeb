@@ -35,7 +35,7 @@
     <section class="formulario">
         <section class="formularioCliente">
             <form method="POST" action="processamento/processamento.php">
-                <label>TecPegue / TecPague - Cadastrar Produto</label>
+                <label>TecPegue / TecPague - Cadastrar Produtos</label>
                 
                 <input type="text" placeholder="Nome" name="inputNome">
                 
