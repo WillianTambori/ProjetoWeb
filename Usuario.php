@@ -1,6 +1,6 @@
 <?php 
  require "processamento/funcoesBD.php";
- ini_set("display_errors","On");
+ ini_set("display_errors","off");
 session_start();
 
 if(isset($_SESSION['login'])){
@@ -53,24 +53,29 @@ if(isset($_SESSION['login'])){
                 
             </div>
             <div class="prod">
-                <h1>Produto</h1>
                     <section class="formulario conteudo-form">
                         <form method="POST" action="processamento/processamento.php" enctype="multipart/form-data" >
-                            <label>Cadastrar Produto</label>
+                            <h1>Cadastrar Produto</h1>
 
                             <input type="hidden" value="<?php echo login(); ?>" name="inputId"> 
                             
-                            <input type="text" placeholder="Nome" name="inputNome">
+                            <label for="produto">Nome do Produto:</label>
+							<input type="text" placeholder="Nome" id="produto" name="inputNome">
                             
-                            <input type="text" placeholder="Marca" name="inputMarca">
+							<label for="marca">Marca:</label>
+                            <input type="text" id="marca" placeholder="Marca" name="inputMarca">
                             
-                            <input type="text" placeholder="Modelo"  name="inputModelo">
+							<label for="modelo">Modelo:</label>
+                            <input type="text" id="modelo" placeholder="Modelo"  name="inputModelo">
                             
-                            <input type="date" placeholder="Data de Fabricação" name="inputDataFabr">
+							<label for="dtF">Data de Fabricação:</label>
+                            <input type="date" id="dtF" placeholder="Data de Fabricação" name="inputDataFabr">
                             
-                            <input type="text" placeholder="Descrição" name="inputDescricao">
-
-                            <input type="text" placeholder="Valor" name="inputValor"><br>
+							<label for="desc">Descrição:</label>
+                            <input type="text" id="desc" placeholder="Descrição" name="inputDescricao">
+							
+							<label for="valor">Valor:</label>
+                            <input type="text" id="valor" placeholder="Valor" name="inputValor"><br>
 
 
                             <label>Foto</label>
@@ -125,7 +130,7 @@ if(isset($_SESSION['login'])){
                          </form>
                         </div>
                         <?php
-                        if($_SESSION['codigo'] == $produto["cod"]){?>
+                        if($_SESSION['codigo'] == $produto['cod']){?>
                             
                             <section class='produto-produto' >
                                 

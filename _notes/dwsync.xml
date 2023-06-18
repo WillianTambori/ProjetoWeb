@@ -3,7 +3,7 @@
 <file name="acessoNegado.php" server="sejamobile.com.br/public_html/clientes/projetowebfatec/" local="133315026469910836" remote="133315282800000000" Dst="0" />
 <file name="buscaCategoria.php" server="sejamobile.com.br/public_html/clientes/projetowebfatec/" local="133315034171512795" remote="133315282800000000" Dst="0" />
 <file name="cadastraProduto.php" server="sejamobile.com.br/public_html/clientes/projetowebfatec/" local="133315026545433114" remote="133315282800000000" Dst="0" />
-<file name="cadastroUsuario.php" server="sejamobile.com.br/public_html/clientes/projetowebfatec/" local="133315026765789046" remote="133315282800000000" Dst="0" />
+<file name="cadastroUsuario.php" server="sejamobile.com.br/public_html/clientes/projetowebfatec/" local="133315204658772426" remote="133315312200000000" Dst="0" />
 <file name="contato.php" server="sejamobile.com.br/public_html/clientes/projetowebfatec/" local="133315026908845306" remote="133315282800000000" Dst="0" />
 <file name="CriarDatabase.sql" server="sejamobile.com.br/public_html/clientes/projetowebfatec/" local="133307325103687442" remote="133315282800000000" Dst="0" />
 <file name="incBanner.php" server="sejamobile.com.br/public_html/clientes/projetowebfatec/" local="133315024096010861" remote="133315283400000000" Dst="0" />
@@ -16,9 +16,8 @@
 <file name="listaProdutos.php" server="sejamobile.com.br/public_html/clientes/projetowebfatec/" local="133315027129515021" remote="133315283400000000" Dst="0" />
 <file name="login.php" server="sejamobile.com.br/public_html/clientes/projetowebfatec/" local="133315027201338365" remote="133315283400000000" Dst="0" />
 <file name="logout.php" server="sejamobile.com.br/public_html/clientes/projetowebfatec/" local="133315027282519985" remote="133315283400000000" Dst="0" />
-<file name="usuario.php" server="sejamobile.com.br/public_html/clientes/projetowebfatec/" local="133315014780912706" remote="133315291800000000" Dst="0" />
+<file name="usuario.php" server="sejamobile.com.br/public_html/clientes/projetowebfatec/" local="133315208248861174" remote="133315315800000000" Dst="0" />
 <file name="produtoDetalhe.php" server="sejamobile.com.br/public_html/clientes/projetowebfatec/" local="133315283400000000" remote="133315283400000000" Dst="0" />
-<file name="ProjetoFinalizado.zip" server="sejamobile.com.br/public_html/clientes/projetowebfatec/" local="133315283400000000" remote="133315283400000000" Dst="0" />
 <file name="ProjetoWeb" server="sejamobile.com.br/public_html/clientes/projetowebfatec/" local="133315283400000000" remote="133315283400000000" Dst="0" />
 <file name="resultBusca.php" server="sejamobile.com.br/public_html/clientes/projetowebfatec/" local="133315283400000000" remote="133315283400000000" Dst="0" />
 <file name="temp.txt" server="sejamobile.com.br/public_html/clientes/projetowebfatec/" local="133315283400000000" remote="133315283400000000" Dst="0" />

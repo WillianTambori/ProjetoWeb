@@ -20,7 +20,7 @@
                 
                 <label for="inputSobrenome">Sobrenome: </label><input type="text" id="inputSobrenome" placeholder="Sobrenome" name="inputSobrenome">
                 
-                <label for="inputCPF">Sobrenome: </label><input type="text" id="inputCPF" placeholder="CPF" name="inputCPF">
+                <label for="inputCPF">CPF: </label><input type="text" id="inputCPF" placeholder="CPF" name="inputCPF">
                 
                 <label for="inputDataNasc">Data Nascimento: </label><input type="date" id="" placeholder="Data Nascimento" name="inputDataNasc">
                 
