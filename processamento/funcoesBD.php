@@ -2,6 +2,7 @@
 ini_set("display_errors","On");
 function conectarBD(){
     $conexao = mysqli_connect("localhost","root","","ulx");
+	
     return($conexao);
 }
 

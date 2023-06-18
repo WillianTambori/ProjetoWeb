@@ -23,33 +23,22 @@
         </nav>
     </header>
 
-    <section class="categorias">
+ <section class="categorias">
         <div>
-            <a href="#"><img src="img/prod/modelo.PNG"></a><br>
-            <a href="#">Categoria</a>
+            <a href="buscaCategoria.php?cat=SmartPhones"><img src="img/prod/celular.png"></a><br>
+            <a href="buscaCategoria.php?cat=">SmartPhones</a>
         </div>
         <div>
-            <a href="#"><img src="img/prod/modelo.PNG"></a><br>
-            <a href="#">Categoria</a>
+            <a href="buscaCategoria.php?cat=Impressora"><img src="img/prod/impressora.png"></a><br>
+            <a href="buscaCategoria.php?cat=">Impressoras</a>
         </div>
         <div>
-            <a href="#"><img src="img/prod/modelo.PNG"></a><br>
-            <a href="#">Categoria</a>
+            <a href="buscaCategoria.php?cat=Mouse"><img src="img/prod/mouse.png"></a><br>
+            <a href="buscaCategoria.php?cat=Mouses">Mouses</a>
         </div>
         <div>
-            <a href="#"><img src="img/prod/modelo.PNG"></a><br>
-            <a href="#">Categoria</a>
+            <a href="buscaCategoria.php?cat=Computadores"><img src="img/prod/pc.png"></a><br>
+            <a href="buscaCategoria.php?cat=Computadores">Computadores</a>
         </div>
-        <div>
-            <a href="#"><img src="img/prod/modelo.PNG"></a><br>
-            <a href="#">Categoria</a>
-        </div>
-        <div>
-            <a href="#"><img src="img/prod/modelo.PNG"></a><br>
-            <a href="#">Categoria</a>
-        </div>
-        <div>
-            <a href="#"><img src="img/prod/modelo.PNG"></a><br>
-            <a href="#">Categoria</a>
-        </div>
+        
     </section>

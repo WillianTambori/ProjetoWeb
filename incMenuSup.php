@@ -33,7 +33,7 @@
             <a href="buscaCategoria.php?cat=">SmartPhones</a>
         </div>
         <div>
-            <a href="buscaCategoria.php?cat=Impressoras"><img src="img/prod/impressora.png"></a><br>
+            <a href="buscaCategoria.php?cat=Impressora"><img src="img/prod/impressora.png"></a><br>
             <a href="buscaCategoria.php?cat=">Impressoras</a>
         </div>
         <div>
